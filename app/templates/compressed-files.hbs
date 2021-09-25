@@ -1,15 +1,14 @@
-{{page-title "CompressedFiles"}}
+{{page-title "Compressed Files Stored on User Disk"}}
+
 <h3>List of Compressed Files</h3>
 
+
 <ul>
-  {{#each @model as |compressed_files|}}
+  {{#each @model as |compressed_files| }}
+
     <li>{{compressed_files}}</li>
+
   {{/each}}
 </ul>
-
-<CompressedFilesCollection
-  @title="List of Scientists"
-  @people={{@model}}
-/>
 
 {{outlet}}

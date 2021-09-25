@@ -3,7 +3,11 @@
 <h2>{{@title}}</h2>
 
 <ul>
-  {{#each @people as |person|}}
-    <li>{{person}}</li>
+  {{#each @model as |compressed_files|}}
+    <li>
+      {{compressed_files}}
+    </li>
   {{/each}}
 </ul>
+
+{{outlet}}
